@@ -17,7 +17,6 @@ public class SalesForceRunner {
     }
 
 
-
 // @BeforeClass
 /*public static void setup() {
     String reportsOutput = LocalConfUtils.getRootDir() + File.separator + "html-reports";
