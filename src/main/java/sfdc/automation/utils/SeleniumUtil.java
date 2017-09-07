@@ -19,7 +19,7 @@ public class SeleniumUtil {
 	 * We will create a null object of WebDriver Interface since WebDriver is an
 	 * Interface And we can't instantiate an object of an Interface. So, we will
 	 * instantiate it whenever required by implementation of WebDriver Interface
-	 * that is ChromeDriver/whichever as we see on around line #52 & 53
+	 * that is ChromeDriver/whichever as we see on around line #47 
 	 * webDriver = new ChromeDriver(); webDriver = new FirefoxDriver();
 	 */
 
@@ -35,7 +35,7 @@ public class SeleniumUtil {
 	 * to get the object of SeleniumUtil Class. And in this method, we will
 	 * check whether we already have object of SeleniumUtil class or not. If it
 	 * already exists, then we will return the object else if we are
-	 * initializing fit for the first time we will create a new object and
+	 * initializing it for the first time we will create a new object and
 	 * return it. So,if anyone wants to create the object of the class
 	 * SeleniumUtil, they can use the static method we created
 	 * 
@@ -45,6 +45,7 @@ public class SeleniumUtil {
 	public static SeleniumUtil getSeleniumUtil() {
 		if (seleniumUtil == null) {
 			seleniumUtil = new SeleniumUtil("chrome");
+			//seleniumUtil = new SeleniumUtil("firefox");
 			return seleniumUtil;
 		} else {
 			return seleniumUtil;
@@ -95,7 +96,7 @@ public class SeleniumUtil {
 	}
 	// sending to github
 
-	// Highlight the name of the method (sendKeysByXPat) then press Alt + Shift
+	// Highlight the name of the method (sendKeysByXPath) then press Alt + Shift
 	// + J ; this will add a Java doc comment
 
 	/**
